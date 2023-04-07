@@ -11,6 +11,26 @@ app.use(bodyParser.json());
 // Serve static files from the public directory
 app.use(express.static('public'));
 
+// Define routes
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/initiatives', (req, res) => {
+  res.send('Here are our current initiatives...');
+});
+
+app.get('/events', (req, res) => {
+  res.send('Here are the upcoming events...');
+});
+
+app.post('/contact', (req, res) => {
+  // Handle form submission
+  console.log(req.body);
+  res.redirect('/');
+});
+
+
 // Define a route for the contact form submission
 app.post('/contact', function(req, res) {
   // Get the form data from the request body
