@@ -17,11 +17,19 @@ app.get('/', (req, res) => {
 });
 
 app.get('/initiatives', (req, res) => {
-  res.send('Here are our current initiatives...');
+  // res.send('Here are our current initiatives...');
+  res.sendFile(__dirname + '/Contents/initiatives.html')
 });
 
 app.get('/events', (req, res) => {
-  res.send('Here are the upcoming events...');
+  // res.send('Here are the upcoming events...');
+  res.sendFile(__dirname + '/Contents/events.html')
+});
+
+app.get('/contact', (req, res) => {
+  // res.send('Here are the upcoming events...');
+  res.sendFile(__dirname + '/Contents/contact.html')
+
 });
 
 app.post('/contact', (req, res) => {
