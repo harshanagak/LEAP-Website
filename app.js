@@ -26,6 +26,16 @@ app.get('/events', (req, res) => {
   res.sendFile(__dirname + '/Contents/events.html')
 });
 
+app.get('/subteams', (req, res) => {
+  // res.send('Here are the upcoming events...');
+  res.sendFile(__dirname + '/Contents/subteams.html')
+});
+
+app.get('/about', (req, res) => {
+  // res.send('Here are the upcoming events...');
+  res.sendFile(__dirname + '/Contents/about.html')
+});
+
 app.get('/contact', (req, res) => {
   // res.send('Here are the upcoming events...');
   res.sendFile(__dirname + '/Contents/contact.html')
