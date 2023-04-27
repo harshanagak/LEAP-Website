@@ -1,3 +1,14 @@
+body
+{
+  /* background-image: url(images/logo.jpeg); */
+  /* opacity: 0.6; */
+  background-size: cover;
+  font-family: 'Space Mono'
+}
+h1, h2, h3, h4, h5, h6, figure {
+  font-family: 'Kaushan Script', cursive;
+}
+
 .navbar
 {
   text-align: center;
@@ -19,10 +30,10 @@
 }
 .card-item
 {
-  height: 600px;
+  /* height: 600px; */
 }
 .card-body {
-  height: 200px; /* set a fixed height for the card body */
+  height: 300px; /* set a fixed height for the card body */
   overflow: scroll; /* hide any overflow beyond the fixed height */
 }
 

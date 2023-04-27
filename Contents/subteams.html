@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,32 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Link to custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .card h2 {
+            color: #4CAF50;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
@@ -43,5 +69,45 @@
             </div>
         </div>
     </nav>
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <div class="col-6">
+                <div class="card">
+                    <h2>Content Team</h2>
+                    <p>This is responsible for ideation, creation, optimization and distribution.</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <h2>Design Team</h2>
+                    <p>This is in charge of the club's digital presence, where you will use of various software to
+                        demonstrate the club's overall potential to the society.</p>
+                </div>
+                
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <h2>Plantation Team</h2>
+                    <p>This is a group of environmentalists who are committed to preserving the environment by planting trees and conducting research in the process.</p>
+                </div>
+                
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <h2>Events Team</h2>
+                    <p>This Team will have work involved in planning, organizing and conducting a major event.</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <h2>Techie Team</h2>
+                    <p>This is a sub team where a group of technologists work to improve the environment by utilising
+                        the technology that surrounds us.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
