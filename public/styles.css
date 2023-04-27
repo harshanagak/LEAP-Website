@@ -62,7 +62,7 @@ body {
 }
 
 /* *****CARDS IN SUBTEAMS**** */
-.card {
+#subteams .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -75,17 +75,18 @@ body {
   border: 1px solid #ddd;
 }
 
-.card h2 {
+#subteams .card h2 {
   color: #4caf50;
 }
 
-.card p {
+#subteams .card p {
   color: #666;
   font-size: 14px;
 }
 
 /* *****FOOTER******/
 #footer {
+  background-color: #4caf50;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -107,10 +108,7 @@ body {
 background-color: hsl(172, 100%, 62%);
 } */
 
-#brand {
-  font-family: "Dancing Script", cursive;
-  color: #ff6347;
-}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -135,8 +133,7 @@ background-color: hsl(172, 100%, 62%);
 }
 
 .wrapper .icon i {
-  color: #fff;
-
+  color: black;
   transition: 0.4s linear;
 }
 
@@ -145,7 +142,7 @@ background-color: hsl(172, 100%, 62%);
   top: 0;
   font-size: 14px;
   background-color: #ff6347;
-  color: #ffffff;
+  color: black;
   padding: 5px 8px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -185,7 +182,7 @@ background-color: hsl(172, 100%, 62%);
   border-left: 4px solid;
   border-right: 4px solid;
   transform: skewX(20deg);
-  color: #fff;
+  color: black;
 }
 
 .wrapper .icon:hover::after {
@@ -193,5 +190,5 @@ background-color: hsl(172, 100%, 62%);
   border-top: 4px solid;
   border-bottom: 4px solid;
   transform: skewY(-20deg);
-  color: #fff;
+  color: black;
 }
