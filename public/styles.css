@@ -66,6 +66,26 @@ body {
   margin: 0%;
   padding: 7% 0;
 }
+.f-item {
+  text-align: center;
+  padding: 0% 2%;
+  margin: 1%;
+  align-self: center;
+  border: 2px solid grey;
+}
+.f-item h2,img,p{
+  padding: 1% 4%;
+}
+.f-container {
+  display: flex;
+  /* border: 2px solid grey; */
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 1% 10%;
+}
 .flex-item {
   margin: 0%;
 }
