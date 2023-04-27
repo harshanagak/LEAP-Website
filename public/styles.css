@@ -1,37 +1,56 @@
-body
-{
+body {
   /* background-image: url(images/logo.jpeg); */
   /* opacity: 0.6; */
-  background-size: cover;
-  font-family: 'Space Mono'
-}
-h1, h2, h3, h4, h5, h6, figure {
-  font-family: 'Kaushan Script', cursive;
+  /* background-size: cover; */
+  font-family: "Space Mono";
 }
 
-.navbar
-{
+/* ******NAVBAR****** */
+.navbar {
   text-align: center;
+  background-color: #51cb6d;
+  font-family: "Cormorant Garamond", serif;
+  font-size: x-large;
 }
-.logo
-{
-  width: 2%;
-  height: 2%;
-  margin:1%
+.nav-item {
+  font-weight: bold;
+  /* margin: 0.5%; */
 }
-.flex-container
-{
+.logo {
+  width: 3%;
+  height: 4%;
+  margin: 1%;
+}
+
+/* *******TITLE******** */
+.banner-image p {
+  font-family: "Space Mono", monospace;
+  width: 65vw;
+  margin: auto;
+}
+.banner-image h1 {
+  font-family: "Kaushan Script", cursive;
+  color: #609966;
+  font-size: 10vw;
+  width: 70vw;
+  margin: auto;
+}
+
+/* *******FLEX-BOX******** */
+.flex-container {
   display: flex;
   /* border: 2px solid grey; */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4%;
+  margin: 1%;
   padding: 4% 0;
 }
-.card-item
-{
-  /* height: 600px; */
+.flex-item {
+  margin: 1%;
 }
+
+/* ******CARDS******** */
 .card-body {
   height: 300px; /* set a fixed height for the card body */
   overflow: scroll; /* hide any overflow beyond the fixed height */
@@ -40,4 +59,139 @@ h1, h2, h3, h4, h5, h6, figure {
 .card-img-top {
   height: 100%; /* set the image height to fill the card body */
   object-fit: cover; /* crop the image to fit within the card body */
+}
+
+/* *****CARDS IN SUBTEAMS**** */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  /* font-family: arial; */
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.card h2 {
+  color: #4caf50;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* *****FOOTER******/
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red; */
+  text-align: center;
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: "Poppins", sans-serif;
+  background: #111;
+background-color: hsl(172, 100%, 62%);
+} */
+
+#brand {
+  font-family: "Dancing Script", cursive;
+  color: #ff6347;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wrapper .icon {
+  position: relative;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.wrapper .icon i {
+  color: #fff;
+
+  transition: 0.4s linear;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #ff6347;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon::before,
+.wrapper .icon::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.4s linear;
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(0.8);
+  transition: 0.4s linear;
+}
+
+.wrapper .icon:hover::before {
+  border-radius: 50%;
+  border-left: 4px solid;
+  border-right: 4px solid;
+  transform: skewX(20deg);
+  color: #fff;
+}
+
+.wrapper .icon:hover::after {
+  border-radius: 50%;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  transform: skewY(-20deg);
+  color: #fff;
 }

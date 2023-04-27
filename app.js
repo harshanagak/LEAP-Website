@@ -16,9 +16,9 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/initiatives', (req, res) => {
+app.get('/blogs', (req, res) => {
   // res.send('Here are our current initiatives...');
-  res.sendFile(__dirname + '/Contents/initiatives.html')
+  res.sendFile(__dirname + '/Contents/blogs.html')
 });
 
 app.get('/events', (req, res) => {
