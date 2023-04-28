@@ -149,6 +149,14 @@ body, html {
   font-size: 14px;
 }
 
+.cimg{
+  border-radius: 5%;
+}
+
+.cimg2{
+  border-radius: 50%;
+}
+
 
 /* ******BLOGS******* */
 #blogs {
