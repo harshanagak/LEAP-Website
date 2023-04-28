@@ -20,9 +20,10 @@ body {
   /* margin: 0.5%; */
 }
 .logo {
+  padding: 0;
   width: 3%;
-  height: 4%;
-  margin: 1%;
+  height: auto;
+  margin:  0% 1%;
 }
 
 /* *******BANNER******** */
@@ -122,6 +123,37 @@ body {
 #subteams .card p {
   color: #666;
   font-size: 14px;
+}
+
+
+/* ******BLOGS******* */
+#blogs {
+  /* padding: 7% 15%; */
+  text-align: center;
+  background-color: #A4D0A4;
+  /* color: white; */
+}
+
+.testimonials-image {
+  /* width: 20%; */
+  border-radius: 10%;
+  /* margin: 2.5%; */
+}
+a
+{
+  text-decoration: none;
+}
+a h2{
+  font-weight: bold;
+  color: black;
+}
+.carousel-item {
+  /* background-color: white; */
+  /* padding: 7% 15%; */
+}
+.carousel
+{
+  margin:4% 0%;
 }
 
 /* *****FOOTER******/
