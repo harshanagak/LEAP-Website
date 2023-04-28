@@ -7,6 +7,30 @@ body {
   font-family: "Space Mono";
 }
 
+
+/* ******CURSOR******* */
+/* 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+body, html {
+	position: relative;
+	height: 100%; 
+	width : 100%;  
+	margin: 0;
+  background-color: #000000;
+}
+*/
+.leaf {
+	position: absolute;
+  border: solid 1px #ccc;
+	width: 60px; 
+	height: 60px; 
+  border-radius: 50%;  
+}
+
+
+
+
+
 /* ******NAVBAR****** */
 .navbar {
   text-align: center;
