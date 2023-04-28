@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>INITIATIVES| LEAP</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LEAP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -12,9 +13,9 @@
     <!-- Link to custom CSS -->
     <link rel="stylesheet" href="/styles.css">
     <!-- Link to Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"
-        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous' defer></script>
+    <script src="/cursor.js"></script>
     <!-- font links -->
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -22,42 +23,412 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-</head>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="team.css" />
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <img class="logo" src="/images/logo.jpeg" alt="LEAP-logo" href="/">
-            <!-- <a class="navbar-brand" href="/">LEAP</a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/events">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/blogs">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/subteams">Sub Teams</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="https.//unpkg.com/aos@next/dist/aos.css" />
+		<style>
+			.banner-image {
+				background-image: url("banner-img.jpg");
+				background-size: cover;
+			}
+			[data-aos="new-animation"] {
+				opacity: 10;
+				transition-property: transform, opacity;
+			}
+			[data-aos="new-animation"].aos-animate {
+				opacity: 1;
+			}
+
+			@media screen and (min-width: 768px) {
+				[data-aos="new-animation"] {
+					transform: scale(1.3);
+					transition: 3s;
+				}
+				[data-aos="new-animation"].aos-animate {
+					transform: translateX(0);
+				}
+			}
+			body {
+				/* background-color: black !important; */
+				font-family: PT Sans;
+				color: white !important;
+				width: 100% !important;
+				height: 100%;
+				margin: 0px;
+				padding: 50px;
+				overflow-x: hidden !important;
+			}
+
+			body,
+			html {
+				/* background-color: #000; */
+				width: 100%;
+				min-height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+
+			footer a {
+				color: #fff;
+				font-size: 14px;
+				transition-duration: 0.2s;
+			}
+
+			footer a:hover {
+				color: #fa944b;
+				text-decoration: none;
+			}
+			footer hr {
+				padding-left: 600px;
+			}
+			.copy {
+				font-size: 12px;
+				padding: 10px;
+				border-top: 1px solid #ffffff;
+			}
+
+			.footer-middle {
+				padding-top: 2em;
+				color: white;
+			}
+
+			/* footer social icons */
+
+			ul.social-network {
+				list-style: none;
+				display: inline;
+				align-content: center;
+				padding: 0;
+			}
+
+			ul.social-network li {
+				display: inline;
+				margin: 0 5px;
+			}
+
+			/* footer social icons */
+
+			.social-network a.icoFacebook:hover {
+				background-color: #3b5998;
+			}
+
+			.social-network a.icoLinkedin:hover {
+				background-color: #007bb7;
+			}
+			.social-network a.icoYoutube:hover {
+        background-color: #e70c22;
+      }
+      .social-network a.icoMedium:hover {
+        background-color: #085a05;
+      }
+
+			.social-network a.icoFacebook:hover i,
+			.social-network a.icoLinkedin:hover i,
+			.social-network a.icoYoutube:hover i,
+			.social-network a.icoMedium:hover i {
+				color: #fff;
+			}
+
+			.social-network a.socialIcon:hover,
+			.socialHoverClass {
+				color: #44bcdd;
+			}
+
+			.social-circle li a {
+				display: inline-block;
+				position: relative;
+				margin: 0 auto 0 auto;
+				-moz-border-radius: 50%;
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+				text-align: center;
+				width: 30px;
+				height: 30px;
+				font-size: 15px;
+			}
+
+			.social-circle li i {
+				margin: 0;
+				line-height: 30px;
+				text-align: center;
+			}
+
+			.social-circle li a:hover i,
+			.triggeredHover {
+				-moz-transform: rotate(360deg);
+				-webkit-transform: rotate(360deg);
+				-ms--transform: rotate(360deg);
+				transform: rotate(360deg);
+				-webkit-transition: all 0.2s;
+				-moz-transition: all 0.2s;
+				-o-transition: all 0.2s;
+				-ms-transition: all 0.2s;
+				transition: all 0.2s;
+			}
+
+			.social-circle i {
+				color: #595959;
+				-webkit-transition: all 0.8s;
+				-moz-transition: all 0.8s;
+				-o-transition: all 0.8s;
+				-ms-transition: all 0.8s;
+				transition: all 0.8s;
+			}
+
+			.social-network a {
+				background-color: #f9f9f9;
+			}
+			.gg {
+				display: flex;
+				justify-content: space-around;
+			}
+			@media screen and (max-width: 768px) {
+				.gg {
+					display: grid;
+					justify-content: space-evenly;
+				}
+			}
+			#loader{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      /* background: #fbfcff url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center; */
+      z-index: 1;
+    }
+    .hi-slide { position: relative; width: 754px; height: 292px; margin: 50px auto 0; }
+            
+.hi-slide .hi-next,
+.hi-slide .hi-prev 
+            { position: absolute;
+              top: 50%; 
+              width: 40px;
+              height: 40px; 
+              margin-top: -20px;     
+                border-radius: 50px; 
+                 
+                
+              line-height: 40px;
+              text-align: center; 
+              cursor: pointer;
+              background-color: #E53948; 
+              /* color: black;                */
+              transition: all 0.6s;
+              font-size: 20px; 
+                font-weight: bold;
+            }
+           .hi-slide .hi-next:hover, 
+            .hi-slide .hi-prev:hover 
+            {
+            opacity: 1; 
+            background-color: #E53948;  
+            }
+            
+           .hi-slide .hi-prev { left: -60px; }
+            
+    .hi-slide .hi-prev::before { content: '<'; }
+    .hi-slide .hi-next { right: -100px; }
+    .hi-slide .hi-next::before { content: '>'; }
     
-      
-</body>
+            .hi-slide > ul
+                    { 
+                        list-style: none; 
+                        position: relative;
+                        width: 754x; 
+                        height: 292px; 
+                        margin: 0;
+                        padding: 0;
+            }
+            
+            
+        .hi-slide > ul > li {
+            overflow: hidden; 
+            position: absolute; 
+            z-index: 0; 
+            left: 377px;
+            top: 146px; 
+            width: 0; 
+            height: 0; 
+            margin: 0; 
+            padding: 0;
+            border: 3px solid #E53948;              
+            /* background-color: #333;  */
+            cursor: pointer; }
+            
+        .hi-slide > ul > li > img { width: 100%; height: 100%; background-position: center;}
+
+ 
+
+		</style>
+		</style>
+		<script type="text/javascript" src="loader.js"></script>
+	</head>
+	<body>
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<img class="logo" src="/images/logo.jpeg" alt="LEAP-logo">
+				<!-- <a class="navbar-brand" href="/">LEAP</a> -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="/">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/events">Events</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/blogs">Blogs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/subteams">Sub Teams</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="loader"></div>
+		
+
+		<!-- Banner Image  -->
+
+		<br />
+		<br />
+		<h1 style="text-align: center; color: #E53948; font-family: myFirstFont; font-size: 8vw; width: 70vw; margin: auto;">Blogs</h1>
+		
+		<div class="slide hi-slide">
+			<div class="hi-prev "></div>
+			  <div class="hi-next "></div>
+			  <ul>
+				  <li><img  src="/images/blogs/1.jpeg" alt="Img 1" /></li>
+				  <li><img  src="/images/blogs/2.jpeg" alt="Img 2" /></li>
+				  <li><img  src="/images/blogs/3.jpeg" alt="Img 3" /></li>
+				  <li><img  src="/images/blogs/4.jpeg" alt="Img 4" /></li>
+				  <li><img  src="/images/blogs/5.jpeg" alt="Img 5" /></li>
+				  <li><img  src="/images/blogs/6.jpeg" alt="Img 6" /></li>
+				  <li><img  src="/images/blogs/7.jpeg" alt="Img 7" /></li>
+				  <!-- <li><img src="TeamImages/workshopmarketing2 Medium.png" alt="Img 2" /></li>
+				  <li><img src="TeamImages/Descon1 Medium.png" alt="Img 3" /></li>
+				  <li><img src="TeamImages/Webops Medium.png" alt="Img 4" /></li>
+				  <li><img src="TeamImages/Oc1 Medium.png" alt="Img 5" /></li>
+				  <li><img src="TeamImages/PRExhib Medium.png" alt="Img 6" /></li>
+				  <li><img src="TeamImages/Publicity1 Medium.png" alt="Img 7" /></li> -->
+			  </ul>
+		  </div>
+    <br/>
+    <br/>
+
+	
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../jquery.hislide.js" ></script>
+		<script>
+			$('.slide').hiSlide();
+		</script>
+		<!-- <script type="text/javascript">
+			var nav = document.querySelector("nav");
+			let button = document.querySelector('#navbutton');
+			button.addEventListener("click",()=>{
+				nav.classList.add("nav-bg", "shadow");
+				});
+			window.addEventListener("scroll", function () {
+				if (window.pageYOffset > 100) {
+					nav.classList.add("nav-bg", "shadow");
+				} else {
+					nav.classList.remove("nav-bg", "shadow");
+				}
+			});
+		</script> -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		/>
+
+		<link
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 1000,
+			});
+			var scrollEventHandler = function()
+			{
+			window.scroll(0, window.pageYOffset)
+			}
+
+			window.addEventListener("scroll", scrollEventHandler, false);
+		</script>
+		<!-- Footer -->
+		<section id="footer">
+			<footer>
+				<div class="wrapper">
+					<!-- <div class="icon Leetcode"
+						onclick="javascript:window.open('https://leetcode.com/ALS_Venky/', '_blank')">
+						<div class="tooltip">Leetcode</div>
+						<span><i class="fab fa-pagelines"></i></span>
+					</div> -->
+					<div class="icon WhatsApp" onclick="javascript:window.open('https://wa.me/+919177537099', '_blank')">
+						<div class="tooltip">WhatsApp</div>
+						<span><i class="fab fa-whatsapp"></i></span>
+					</div>
+					<div class="icon HackerRank"
+						onclick="javascript:window.open('https://www.youtube.com/channel/UCT9slW6iPuZvPfeNzO6s_rw/featured', '_blank')">
+						<div class="tooltip">Youtube</div>
+						<span><i class="fab fa-youtube"></i></span>
+					</div>
+					<div class="icon github" onclick="javascript:window.open('https://www.instagram.com/leap_nit_trichy/?hl=en', '_blank')">
+						<div class="tooltip">Instagram</div>
+						<span><i class="fab fa-instagram"></i></span>
+					</div>
+					<div class="icon linkedin"
+						onclick="javascript:window.open('https://www.linkedin.com/company/leap-nitt/mycompany/', '_blank')">
+						<div class="tooltip">LinkedIn</div>
+						<span><i class="fab fa-linkedin"></i></span>
+					</div>
+				</div>
+				<div class="container">
+					<p style="color: white; font-size: 15px; text-align: center">
+						Made with
+						<span style="color: #E53948; display: inline-flex; font-size: 1.8em"
+							>&hearts;</span
+						>
+						by LEAP
+					</p>
+					<p style="color: white; font-size: 15px; text-align: center">&copy; 2023 LEAP. All rights reserved.</p>
+				</div>
+			</footer>
+		</section>
+	</body>
 </html>
