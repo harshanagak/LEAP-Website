@@ -1,7 +1,5 @@
 body {
   /* background-image: url(images/logo.jpeg); */
-  /* background-image: url(images/autumnleaf.png); */
-
   /* opacity: 0.6; */
   /* background-size: cover; */
   font-family: "Space Mono";
@@ -13,37 +11,18 @@ body {
   background-color: #51cb6d;
   font-family: "Cormorant Garamond", serif;
   font-size: x-large;
-  margin-bottom: 0;
 }
 .nav-item {
   font-weight: bold;
   /* margin: 0.5%; */
 }
 .logo {
-  padding: 0;
   width: 3%;
-  height: auto;
-  margin:  0% 1%;
+  height: 4%;
+  margin: 1%;
 }
 
-/* *******BANNER******** */
-#banner {
-  /* background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0) -162.91%,
-    #05ad86 100%
-  ),
-  url(images/autumnleaf.png); */
-  /* margin: 0; */
-  width: 100%;
-  height:600px;
-  text-align: center;
-  background-image: url(images/autumnleaf.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-attachment: fixed; */
-  background-size: contain;
-}
+/* *******TITLE******** */
 .banner-image p {
   font-family: "Space Mono", monospace;
   width: 65vw;
@@ -64,31 +43,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0%;
-  padding: 7% 0;
-}
-.f-item {
-  text-align: center;
-  padding: 0% 2%;
   margin: 1%;
-  align-self: center;
-  border: 2px solid grey;
-}
-.f-item h2,img,p{
-  padding: 1% 4%;
-}
-.f-container {
-  display: flex;
-  /* border: 2px solid grey; */
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0%;
-  padding: 1% 10%;
+  padding: 4% 0;
 }
 .flex-item {
-  margin: 0%;
+  margin: 1%;
 }
 
 /* ******CARDS******** */
@@ -103,7 +62,7 @@ body {
 }
 
 /* *****CARDS IN SUBTEAMS**** */
-#subteams .card {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -116,50 +75,42 @@ body {
   border: 1px solid #ddd;
 }
 
-#subteams .card h2 {
-  color: #4caf50;
+.card-eve {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  /* font-family: arial; */
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
 }
 
-#subteams .card p {
+.card h4 {
+  color: #4caf50;
+  font-size: 25px;
+}
+
+.card p {
   color: #666;
   font-size: 14px;
 }
 
+/*****events********/
 
-/* ******BLOGS******* */
-#blogs {
-  /* padding: 7% 15%; */
-  text-align: center;
-  background-color: #A4D0A4;
-  /* color: white; */
+.ch2{
+  color: #4caf50;
 }
 
-.testimonials-image {
-  /* width: 20%; */
-  border-radius: 10%;
-  /* margin: 2.5%; */
-}
-a
-{
-  text-decoration: none;
-}
-a h2{
-  font-weight: bold;
-  color: black;
-}
-.carousel-item {
-  /* background-color: white; */
-  /* padding: 7% 15%; */
-}
-.carousel
-{
-  margin:4% 0%;
+.cimg{
+  border-radius: 5%;
 }
 
 /* *****FOOTER******/
 #footer {
-  background-color: #4caf50;
-  /* position: fixed; */
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -180,11 +131,15 @@ a h2{
 background-color: hsl(172, 100%, 62%);
 } */
 
+#brand {
+  font-family: "Dancing Script", cursive;
+  color: #ff6347;
+}
 .wrapper {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -204,7 +159,8 @@ background-color: hsl(172, 100%, 62%);
 }
 
 .wrapper .icon i {
-  color: white;
+  color: #fff;
+
   transition: 0.4s linear;
 }
 
@@ -213,7 +169,7 @@ background-color: hsl(172, 100%, 62%);
   top: 0;
   font-size: 14px;
   background-color: #ff6347;
-  color: white;
+  color: #ffffff;
   padding: 5px 8px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -253,7 +209,7 @@ background-color: hsl(172, 100%, 62%);
   border-left: 4px solid;
   border-right: 4px solid;
   transform: skewX(20deg);
-  color: white;
+  color: #fff;
 }
 
 .wrapper .icon:hover::after {
@@ -261,5 +217,5 @@ background-color: hsl(172, 100%, 62%);
   border-top: 4px solid;
   border-bottom: 4px solid;
   transform: skewY(-20deg);
-  color: white;
+  color: #fff;
 }
