@@ -97,7 +97,8 @@ html {
 .hi-slide .hi-next:hover,
 .hi-slide .hi-prev:hover {
   opacity: 1;
-  background-color: #4caf50;
+  background-color: #49b54d;
+  /* background-color: white; */
 }
 
 .hi-slide .hi-prev {
@@ -116,6 +117,10 @@ html {
   content: ">";
 }
 
+/* .card-body {
+  height: 380px; 
+  overflow:scroll; 
+} */
 .hi-slide > ul {
   list-style: none;
   position: relative;
@@ -135,7 +140,8 @@ html {
   height: 0;
   margin: 0;
   padding: 0;
-  border: 3px solid #4caf50;
+  /* border: 3px solid #4caf50; */
+  border: 3px solid white;
   /* background-color: #333;  */
   cursor: pointer;
 }
