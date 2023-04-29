@@ -106,7 +106,7 @@ body, html {
 
 /* ******CARDS******** */
 .card-body {
-  height: 300px; /* set a fixed height for the card body */
+  height: auto; /* set a fixed height for the card body */
   overflow: scroll; /* hide any overflow beyond the fixed height */
 }
 
