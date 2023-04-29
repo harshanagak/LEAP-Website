@@ -103,6 +103,79 @@ body, html {
 .flex-item {
   margin: 0%;
 }
+/* *****EVENT LISTENERS***** */
+#plant {
+  font-family: "Space Mono", monospace;
+}
+
+#plant-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#plant-details img {
+  margin: 20px 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+#plant-details h2 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  text-align: center;
+}
+
+#plant-details p {
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+#plant-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#plant-info img {
+  margin: 20px 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+#plant-info h2 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  text-align: center;
+}
+
+#plant-info h3 {
+  margin: 20px 0 10px;
+  font-size: 28px;
+  text-align: center;
+}
+
+#plant-info p {
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
 
 /* ******CARDS******** */
 .card-body {
