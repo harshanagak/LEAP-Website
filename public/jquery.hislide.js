@@ -7,13 +7,13 @@
         };
         $.extend(true, setting, options);
         var states = [
-            { $zIndex: 1, width: 150, height: 300, top: 69, left: 134, $opacity: 0.2 },
-            { $zIndex: 2, width: 170, height: 270, top: 59, left: 0, $opacity: 0.4 },
-            { $zIndex: 3, width: 218, height: 318, top: 35, left: 110, $opacity: 0.7 },
-            { $zIndex: 4, width: 288, height: 388, top: 0, left: 263, $opacity: 1 },
-            { $zIndex: 3, width: 218, height: 318, top: 35, left: 470, $opacity: 0.7 },
-            { $zIndex: 2, width: 170, height: 270, top: 59, left: 620, $opacity: 0.4 },
-            { $zIndex: 1, width: 150, height: 300, top: 69, left: 500, $opacity: 0.2 }
+            { $zIndex: 1, width: 150+25, height: 300-10, top: 69, left: 134, $opacity: 0.2 },
+            { $zIndex: 2, width: 170+25, height: 270-10, top: 59, left: 0, $opacity: 0.4 },
+            { $zIndex: 3, width: 218+25, height: 318-10, top: 35, left: 110, $opacity: 0.7 },
+            { $zIndex: 4, width: 288+25, height: 388-10, top: 0, left: 263, $opacity: 1 },
+            { $zIndex: 3, width: 218+25, height: 318-10, top: 35, left: 470, $opacity: 0.7 },
+            { $zIndex: 2, width: 170+25, height: 270-10, top: 59, left: 620, $opacity: 0.4 },
+            { $zIndex: 1, width: 150+25, height: 300-10, top: 69, left: 500, $opacity: 0.2 }
         ];
 
         var $lis = $ele.find('li');
