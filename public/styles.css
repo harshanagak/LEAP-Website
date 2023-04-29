@@ -129,13 +129,44 @@ body, html {
   border: 1px solid #ddd;
 }
 
+.card-eve {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  /* font-family: arial; */
+  background-color: #f7f7f7;
+  padding: 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
 #subteams .card h2 {
   color: #4caf50;
+}
+
+.card h4 {
+  color: #4caf50;
+	font-size: 25px;
 }
 
 #subteams .card p {
   color: #666;
   font-size: 14px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.cimg{
+  border-radius: 5%;
+}
+
+.cimg2{
+  border-radius: 50%;
 }
 
 
