@@ -48,3 +48,10 @@ class UI {
 
 const ui = new UI();
 ui.init();
+function changeColor(color) {
+    document.body.style.background = color;
+  }
+  
+  function changeit(){
+    changeColor('#e6ffe6');
+  }	
