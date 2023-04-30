@@ -1,5 +1,6 @@
-.newsletter {
+#newsletter .newsletter {
   background-color: #f9a826;
+  padding: 10% 0 10% 0;
 }
 
 /* .newsletter{
@@ -7,7 +8,7 @@
     height: 100vh;
 } */
 
-.form-control {
+#newsletter .form-control {
   display: block;
   width: 100%;
   min-height: calc(1.5em + 0.75rem + 2px);
@@ -26,14 +27,14 @@
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.card {
+#newsletter .card {
   padding: 20px;
   background-color: #34ec4d;
   padding-bottom: 50px;
   padding-top: 50px;
 }
 
-.form-control:focus {
+#newsletter .form-control:focus {
   color: #495057;
   background-color: #fff;
   border-color: #f9a826;
@@ -41,7 +42,7 @@
   box-shadow: none;
 }
 
-.border-rad {
+#newsletter .border-rad {
   border-top-right-radius: 28px;
   border-bottom-right-radius: 28px;
 
@@ -50,12 +51,12 @@
   border-color: #f9a826;
 }
 
-.border-rad:hover {
+#newsletter .border-rad:hover {
   background-color: #f9a826;
   border-color: #f9a826;
 }
 
-.box {
+#newsletter .box {
   width: 40%;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.2);
@@ -66,7 +67,7 @@
   text-align: center;
 }
 
-.button {
+#newsletter .button {
   /* font-size: 1em; */
   padding: 10px;
   color: #fff;
@@ -77,11 +78,11 @@
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
-.button:hover {
+#newsletter .button:hover {
   background: #f9a826;
 }
 
-.overlay {
+#newsletter .overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -92,12 +93,12 @@
   visibility: hidden;
   opacity: 0;
 }
-.overlay:target {
+#newsletter .overlay:target {
   visibility: visible;
   opacity: 1;
 }
 
-.popup {
+#newsletter .popup {
   margin: 70px auto;
   padding: 20px;
   background: #06d85f;
@@ -107,12 +108,12 @@
   transition: all 5s ease-in-out;
 }
 
-.popup h2 {
+#newsletter .popup h2 {
   margin-top: 0;
   color: white;
   font-family: Tahoma, Arial, sans-serif;
 }
-.popup .close {
+#newsletter .popup .close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -122,10 +123,10 @@
   text-decoration: none;
   color: #333;
 }
-.popup .close:hover {
+#newsletter .popup .close:hover {
   color: #06d85f;
 }
-.popup .content {
+#newsletter .popup .content {
   max-height: 30%;
   overflow: auto;
 }
