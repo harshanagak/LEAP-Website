@@ -37,42 +37,43 @@
 	<!-- Link to custom CSS -->
 	<link rel="stylesheet" href="/styles.css">
 	<link rel="stylesheet" href="/blogs.css">
+	<link rel="stylesheet" href="/newsletter.css">
 	<script type="text/javascript" src="loader.js"></script>
 </head>
 
 <body>
 	<!-- Navigation bar -->
 	<nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <img class="logo" src="/images/logo.jpeg" alt="LEAP-logo" style="margin-right: 53%;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/events">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/blogs">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/subteams">Sub Teams</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+		<div class="container">
+			<img class="logo" src="/images/logo.jpeg" alt="LEAP-logo" style="margin-right: 53%;">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/events">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/blogs">Blogs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/subteams">Sub Teams</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<div id="loader"></div>
 
 
@@ -80,8 +81,7 @@
 
 	<br />
 	<br />
-	<h1
-		style="text-align: center; color: #4caf50; font-size: 6vw; width: 70vw; margin: auto; padding-top: 5%;">
+	<h1 style="text-align: center; color: #4caf50; font-size: 6vw; width: 70vw; margin: auto; padding-top: 5%;">
 		BLOGS</h1>
 
 	<div class="slide hi-slide">
@@ -227,6 +227,61 @@
 
 		window.addEventListener("scroll", scrollEventHandler, false);
 	</script>
+	<!-- newsletter -->
+
+	<div class="newsletter">
+		<div class="row d-flex justify-content-center align-items-center rows">
+
+			<div class="col-md-6">
+
+
+				<div class="card">
+
+
+					<div class="text-center">
+
+						<img src="https://i.imgur.com/Dh7U4bp.png" width="200">
+						<span class="d-block mt-3">Subscribe to our newsletter know more about <br> environment and
+							climate change</span>
+
+						<div class="mx-5">
+
+
+							<div>
+								<form action="">
+									<input type="email" class="form-control" placeholder="Enter email"
+										aria-label="Recipient's username" aria-describedby="button-addon2" required>
+									<!--<input class="button" type="submit" href="#popup1">-->
+									<!-- <button class="btn btn-success border-rad" type="submit" id="button-addon2">Subscribe</button> -->
+									<!-- <div class="box"> -->
+									<a class="button" type="submit" href="#popup1">Subscribe</a>
+									<!-- </div> -->
+								</form>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- <div class="box">
+	<a class="button" href="#popup1">Subscribe</a>
+</div> -->
+	<div id="popup1" class="overlay">
+		<div class="popup">
+			<h2>Here you go!</h2>
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				You are successfully subscribed to our newsletter.
+				<br>
+				Hope we won't disappoint you😊
+			</div>
+		</div>
+	</div>
 	<!-- Footer -->
 	<section id="footer">
 		<footer>
