@@ -149,7 +149,7 @@ body, html {
   overflow:scroll; /* hide any overflow beyond the fixed height */
 }
 
-#events .card-img-top {
+/* #events .card-img-top { */
 #events .card-img-top {
   height: 100%; /* set the image height to fill the card body */
   object-fit: cover; /* crop the image to fit within the card body */
