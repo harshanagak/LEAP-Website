@@ -103,6 +103,44 @@ body, html {
 .flex-item {
   margin: 0%;
 }
+/* *****EVENT LISTENERS***** */
+#plant {
+  font-family: "Space Mono", monospace;
+  text-align: center;
+}
+
+#plant-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#plant-details img {
+  margin: 20px 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+#plant-details h2 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  text-align: center;
+}
+
+#plant-details p {
+  margin: 0 0 1% 0;
+  line-height: 1;
+  text-align: center;
+}
+
+
 
 /* ******CARDS IN EVENTS******** */
 
@@ -111,6 +149,7 @@ body, html {
   overflow:scroll; /* hide any overflow beyond the fixed height */
 }
 
+#events .card-img-top {
 #events .card-img-top {
   height: 100%; /* set the image height to fill the card body */
   object-fit: cover; /* crop the image to fit within the card body */

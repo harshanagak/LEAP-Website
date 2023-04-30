@@ -1,0 +1,34 @@
+{
+  "plants": [
+    {
+      "name": "Lavender",
+      "use": "Aromatherapy",
+      "environments": ["Sun", "Partial shade"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Single_lavender_flower02.jpg/330px-Single_lavender_flower02.jpg"
+    },
+    {
+      "name": "Mint",
+      "use": "Tea, culinary",
+      "environments": ["Sun", "Partial shade", "Full shade"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Mentha_spicata-IMG_6186.jpg/375px-Mentha_spicata-IMG_6186.jpg"
+    },
+    {
+      "name": "Basil",
+      "use": "Culinary",
+      "environments": ["Sun", "Partial shade"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg/330px-Basil-Basilico-Ocimum_basilicum-albahaca.jpg"
+    },
+    {
+      "name": "Rosemary",
+      "use": "Culinary",
+      "environments": ["Sun", "Partial shade"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/330px-Rosemary_in_bloom.JPG"
+    },
+    {
+      "name": "Chamomile",
+      "use": "Tea, medicinal",
+      "environments": ["Partial shade", "Full shade"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Kamomillasaunio_%28Matricaria_recutita%29.JPG/255px-Kamomillasaunio_%28Matricaria_recutita%29.JPG"
+    }
+  ]
+}
