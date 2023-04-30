@@ -29,7 +29,7 @@ class UI {
             const plantDetail = `<div class="card" style="width: 25rem; font-family: 'Courier New', monospace; margin-bottom:3%">
             <img src="${plant.image}" class="card-img-top mx-auto d-block" alt="${plant.name}" style="width: 90%">
             <div class="card-body text-center">
-              <p class="card-title">${plant.name}</p>
+              <h1 class="card-title">${plant.name}</h1>
               </div>
               <ul class="list-group list-group-flush">
               <li class="list-group-item"><h4>Use:</h4> ${plant.use}</li>
