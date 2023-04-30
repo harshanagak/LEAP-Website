@@ -49,42 +49,6 @@ app.post('/contact', (req, res) => {
 });
 
 
-// Define a route for the contact form submission
-app.post('/contact', function(req, res) {
-  // Get the form data from the request body
-  const name = req.body.name;
-  const email = req.body.email;
-  const message = req.body.message;
-
-  // Create a nodemailer transporter object
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'your-gmail-username',
-      pass: 'your-gmail-password'
-    }
-  });
-
-  // Define the email message options
-  const mailOptions = {
-    from: 'your-gmail-username',
-    to: 'your-email-address',
-    subject: 'New LEAP Contact Form Submission',
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
-  };
-
-  // Send the email
-  transporter.sendMail(mailOptions, function(error, info) {
-    if (error) {
-      console.log(error);
-      res.status(500).send('An error occurred while sending the email.');
-    } else {
-      console.log('Email sent: ' + info.response);
-      res.status(200).send('Email sent successfully!');
-    }
-  });
-});
-
 // Start the server
 app.listen(3000, function() {
   console.log('LEAP website backend server listening on port 3000!');
