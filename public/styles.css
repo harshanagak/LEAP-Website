@@ -106,6 +106,7 @@ body, html {
 /* *****EVENT LISTENERS***** */
 #plant {
   font-family: "Space Mono", monospace;
+  text-align: center;
 }
 
 #plant-details {
@@ -134,56 +135,20 @@ body, html {
 }
 
 #plant-details p {
-  margin: 0;
-  line-height: 1.5;
-  text-align: center;
-}
-#plant-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-#plant-info img {
-  margin: 20px 0;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-}
-
-#plant-info h2 {
-  margin: 0 0 10px;
-  font-size: 32px;
-  text-align: center;
-}
-
-#plant-info h3 {
-  margin: 20px 0 10px;
-  font-size: 28px;
-  text-align: center;
-}
-
-#plant-info p {
-  margin: 0;
-  line-height: 1.5;
+  margin: 0 0 1% 0;
+  line-height: 1;
   text-align: center;
 }
 
 
 
 /* ******CARDS******** */
-.card-body {
+#events .card-body {
   height: 300px; /* set a fixed height for the card body */
   overflow: scroll; /* hide any overflow beyond the fixed height */
 }
 
-.card-img-top {
+#events .card-img-top {
   height: 100%; /* set the image height to fill the card body */
   object-fit: cover; /* crop the image to fit within the card body */
 }

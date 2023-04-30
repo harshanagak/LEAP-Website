@@ -26,15 +26,20 @@ class UI {
         await this.plants.fetchPlantsData();
         this.plantsContainer.addEventListener('click', async () => {
             const plant = this.plants.getRandomPlant();
-            const plantDetail = `<div id="plant-info">
-                        <h2>Here's a plant you should know about:</h2>
-                        <h3>${plant.name}</h3>
-                        <img src="${plant.image}" alt="${plant.name}">
-                        <p><strong>Use:</strong> ${plant.use}</p>
-                        <p><strong>Environments it can be grown in:</strong> ${plant.environments.join(', ')}</p>
-                        <p><strong>Growing tips:</strong> ${plant.tips}</p>
-                        <p><strong>Interesting fact:</strong> ${plant.fact}</p>
-                    </div>`;
+            const plantDetail = `<div class="card" style="width: 25rem; font-family: 'Courier New', monospace; margin-bottom:3%">
+            <img src="${plant.image}" class="card-img-top mx-auto d-block" alt="${plant.name}" style="width: 90%">
+            <div class="card-body text-center">
+              <p class="card-title">${plant.name}</p>
+              </div>
+              <ul class="list-group list-group-flush">
+              <li class="list-group-item"><h4>Use:</h4> ${plant.use}</li>
+              <li class="list-group-item"><h4>Environments it can be grown in: </h4> ${plant.environments.join(', ')}</li>
+            </ul>
+            <div class="card-body text-center">
+              <a href="https://jmflandscaping.com/20-interesting-plants-world/" class="card-link">Learn more</a>
+            </div>
+          </div>
+          `
 
             this.plantDetails.innerHTML = plantDetail;
         });
